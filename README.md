@@ -48,3 +48,12 @@ python3 jammer.py 77 -a qw:er:ty:ui:op:77 -c as:df:gh:jk:07:08 -i 0.5 wlan0
 
 ## Disclaimer
 This script is provided for educational and research purposes only. It is crucial to respect the laws and regulations governing network security in your jurisdiction. Unauthorized access to computer networks is illegal and unethical.
+
+**Note**: you need to put you wireless card in monitor mode first.
+
+'''bash
+ifconfig wlan0 down
+airmon-ng check kill
+iwconfig wlan0 mode monitor
+ifconfig wlan0 up
+'''
