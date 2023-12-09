@@ -51,9 +51,9 @@ This script is provided for educational and research purposes only. It is crucia
 
 **Note**: you need to put you wireless card in monitor mode first.
 
-'''bash
+```bash
 ifconfig wlan0 down
 airmon-ng check kill
 iwconfig wlan0 mode monitor
 ifconfig wlan0 up
-'''
+```
